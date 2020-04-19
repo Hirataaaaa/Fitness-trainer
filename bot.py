@@ -5,8 +5,9 @@ import telegram
 from telebot import types
 from telegram import ChatAction
 from functools import wraps
-from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, ConversationHandler, RegexHandler
-bot = telebot.TeleBot('979702529:AAH4qmbfJ-ayV4fzWTgdD53ghpHjsAXysTs')
+from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, ConversationHandler, RegexHandler #пусть будет хоть это и не нужно
+bot = telebot.TeleBot('979702529:AAH4qmbfJ-ayV4fzWTgdD53ghpHjsAXysTs') #токен
+#Это для себя
 #C:\Users\Hirata\Desktop\bot.py\bot.py
 #cd C:\Users\Hirata\Desktop\bot.py
 #git commit -am "make it better"
@@ -18,19 +19,19 @@ bot = telebot.TeleBot('979702529:AAH4qmbfJ-ayV4fzWTgdD53ghpHjsAXysTs')
 
 @bot.message_handler(content_types=['text'])
 #TRAINING
-def register(message):
-    if message.text == '/reg' or '/start':
-        bot.send_message(message.from_user.id,'Выбери свой пол', reply_markup=keyboard1)
-        bot.register_next_step_handler(message, get_sex)
-    elif message.text == '/eat':
+def register(message): #стартуем
+    if message.text == '/reg' or '/start': #рег, команда, для программы тренировок, а старт это команда при первой активации бота, или она не нужна, короч я хз
+        bot.send_message(message.from_user.id,'Выбери свой пол', reply_markup=keyboard1) #бот отправляет сообщение, выводя клавиатуру
+        bot.register_next_step_handler(message, get_sex) #телепорт на следующую ступень
+    elif message.text == '/eat': #команда для активации программы питания
         bot.send_message(message.from_user.id,'Сколько ты в высоту в сантиметрах?')
         bot.register_next_step_handler(message, get_height)
-    else:
+    else: #если пользователь решит перечить алгоритму
         bot.send_message(message.from_user.id,'Привет, я помогу тебе составить программу тренировок подходящую тебе, если готов, тыкни /reg. Если нужна программа питания, тыкни /eat.', reply_markup=keyboard7)
 
 def get_sex(message):
-    global sex
-    sex = message.text
+    global sex #запоминает текст сообщения пользователя
+    sex = message.text #присваиваем текст сообщения к переменной
     bot.send_message(message.from_user.id, 'Твоя цель?', reply_markup=keyboard2)
     bot.register_next_step_handler(message, get_aim)
 
@@ -423,7 +424,7 @@ def final_training(message):
         bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
 
 
-
+#_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_#
 
 #EAT добавить возраст
 def get_height(message):
@@ -449,14 +450,10 @@ def final_eat(message):
     if 0<height<150 and 0<weight<40 and activity == 'активность 1': #1
         bot.send_message(
         message.from_user.id,'Ваша программа питания готова! Вот Ваш рацион:\
-        \n\n1) '+a+' \n\n2) '+b+'\n'+time20+' \n\n3) '+c+'\n'+up15f20+' \n\n4) '+d+'\n'+up15f20+' \n\n5) '+e+'\n'+up15f20+' \n\n6) '+f+'\n'+up15f20+' \n\n7) '+g+'\n'+up15f20+' \n\n8) '+h+'\n'+up15f20+' \n\n9) '+i+'\n'+time20+''
+        \n\n1) '+a+' \n\n2) '+b+'\n'+time20+' \n\n3) '+c+'\n'+up15f20+' \n\n4) '+d+'\n'+up15f20+' \
+        \n\n5) '+e+'\n'+up15f20+' \n\n6) '+f+'\n'+up15f20+' \n\n7) '+g+'\n'+up15f20+' \n\n8) '+h+'\n'+up15f20+' \n\n9) '+i+'\n'+time20+''
         )
         bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
-
-
-
-
-
 
 #    bot.send_message(message.from_user.id, 'кек')
 #    keyboard = types.InlineKeyboardMarkup()
@@ -464,6 +461,8 @@ def final_eat(message):
 #    keyboard.add(key_yes)
 #    key_no= types.InlineKeyboardButton(text='Нет', callback_data='no')
 #    keyboard.add(key_no)
+
+#_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_#
 
 @bot.callback_query_handler(func=lambda call: True) #TRAINING
 def callback_worker(call):
@@ -503,7 +502,6 @@ ee='Охотничья собака'
 ff='Обратные отжимания от стула'
 gg='Велосипед'
 hh='Подтягивание'
-ii=''
 aaa='Отжимания'
 bbb='Отжимания на брусьях'
 ccc='Приседания с выпрыгиванием'
@@ -550,7 +548,6 @@ up15f20='4 подхода по 15-20 раз'
 up10f12='4 подхода по 10-12 раз'
 up8f10='4 подхода по 8-10 раз'
 
-
 #KEYBOARDS
 keyboard1 = telebot.types.ReplyKeyboardMarkup(True, True)
 keyboard1.add('парень', 'девушка')
@@ -572,8 +569,3 @@ keyboard9 = telebot.types.ReplyKeyboardMarkup(True, True)
 keyboard9.add('Да')
 
 bot.polling(none_stop=True, interval=0)
-
-#ЗАГОТОВОЧКИ
-
-
-#C:\Users\Hirata\Desktop\bot.py\bot.py
