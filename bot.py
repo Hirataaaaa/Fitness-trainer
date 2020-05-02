@@ -13,9 +13,10 @@ bot = telebot.TeleBot('979702529:AAH4qmbfJ-ayV4fzWTgdD53ghpHjsAXysTs') #токе
 #git commit -am "make it better"
 #git push heroku master
 #heroku ps:scale worker=1
-#BOT version 0.1.5.(219)
-#BOT version 0.1.6.(608)
-#BOT version 0.1.7.(587)
+#BOT version 0.1.5(219)
+#BOT version 0.1.6(608)
+#BOT version 0.1.7(587)
+#BOT version 0.1.8(847)
 
 @bot.message_handler(content_types=['text'])
 #TRAINING
@@ -54,7 +55,7 @@ def get_time(message):
     bot.send_message(message.from_user.id, text=question, reply_markup=keyboard9)
     bot.register_next_step_handler(message, final_training)
 
-#__________________ВЫВОД ТРЕНИРОВКИ__________________#
+#__________________ВЫВОД ТРЕНИРОВКИ__________________#ПАРНИ
 def final_training(message):
     if sex == 'парень' and aim == 'подсушиться' and placing == 'в зале' and time == '1 раз': #1.1#
         bot.send_message(
@@ -87,7 +88,7 @@ def final_training(message):
         bot.send_message(
         message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
         \n\n1) '+a+' \n\n2) '+aa+'\n'+time20+' \n\n3) '+bb+'\n'+up15f20+' \
-        \n\n4) '+eee+'\n'+up15f20+' \n\n5) '+cc+'\n'+up15f20+' \n\n6) '+aaa+'\n'+up15f20+' \
+        \n\n4) '+eee+'\n'+up15f20+' \n\n5) '+cc+'\n'+up15f20+' \n\n6) '+dd+'\n'+up15f20+' \
         \n\n7) '+ee+'\n'+up15f20+' \n\n8) '+ff+'\n'+up15f20+' \n\n9) '+gg+'\n'+up15f20+' \n\n10) '+i+'\n'
         )
         bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
@@ -95,7 +96,7 @@ def final_training(message):
         bot.send_message(
         message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
         \n\n1) '+a+' \n\n2) '+aa+'\n'+time10+' \n\n3) '+bb+'\n'+up10f12+' \
-        \n\n4) '+eee+'\n'+up10f12+' \n\n5) '+cc+'\n'+up10f12+' \n\n6) '+aaa+'\n'+up10f12+' \
+        \n\n4) '+eee+'\n'+up10f12+' \n\n5) '+cc+'\n'+up10f12+' \n\n6) '+dd+'\n'+up10f12+' \
         \n\n7) '+ee+'\n'+up10f12+' \n\n8) '+ff+'\n'+up10f12+' \n\n9) '+gg+'\n'+up10f12+' \n\n10) '+i+'\n'
         )
         bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
@@ -103,7 +104,7 @@ def final_training(message):
         bot.send_message(
         message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
         \n\n1) '+a+' \n\n2) '+aa+'\n'+time5+' \n\n3) '+bb+'\n'+up8f10+' \
-        \n\n4) '+eee+'\n'+up8f10+' \n\n5) '+cc+'\n'+up8f10+' \n\n6) '+aaa+'\n'+up8f10+' \
+        \n\n4) '+eee+'\n'+up8f10+' \n\n5) '+cc+'\n'+up8f10+' \n\n6) '+dd+'\n'+up8f10+' \
         \n\n7) '+ee+'\n'+up8f10+' \n\n8) '+ff+'\n'+up8f10+' \n\n9) '+gg+'\n'+up8f10+' \n\n10) '+i+'\n'
         )
         bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
@@ -114,7 +115,7 @@ def final_training(message):
         bot.send_message(
         message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
         \n\n1) '+a+' \n\n2) '+fff+'\n'+time20+' \n\n3) '+bb+'\n'+up15f20+' \
-        \n\n4) '+hh+'\n'+up15f20+' \n\n5) '+h+'\n'+up15f20+' \n\n6) '+aaa+'\n'+up15f20+' \
+        \n\n4) '+hh+'\n'+up15f20+' \n\n5) '+h+'\n'+up15f20+' \n\n6) '+dd+'\n'+up15f20+' \
         \n\n7) '+bbb+'\n'+up15f20+' \n\n8) '+ccc+'\n'+up15f20+' \n\n9) '+c+'\n'+up15f20+' \n\n10) '+i+'\n'
         )
         bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
@@ -122,7 +123,7 @@ def final_training(message):
         bot.send_message(
         message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
         \n\n1) '+a+' \n\n2) '+fff+'\n'+time10+' \n\n3) '+bb+'\n'+up10f12+' \
-        \n\n4) '+hh+'\n'+up10f12+' \n\n5) '+h+'\n'+up10f12+' \n\n6) '+aaa+'\n'+up10f12+' \
+        \n\n4) '+hh+'\n'+up10f12+' \n\n5) '+h+'\n'+up10f12+' \n\n6) '+dd+'\n'+up10f12+' \
         \n\n7) '+bbb+'\n'+up10f12+' \n\n8) '+ccc+'\n'+up10f12+' \n\n9) '+c+'\n'+up10f12+' \n\n10) '+i+'\n'
         )
         bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
@@ -130,7 +131,7 @@ def final_training(message):
         bot.send_message(
         message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
         \n\n1) '+a+' \n\n2) '+fff+'\n'+time5+' \n\n3) '+bb+'\n'+up8f10+' \
-        \n\n4) '+hh+'\n'+up8f10+' \n\n5) '+h+'\n'+up8f10+' \n\n6) '+aaa+'\n'+up8f10+' \
+        \n\n4) '+hh+'\n'+up8f10+' \n\n5) '+h+'\n'+up8f10+' \n\n6) '+dd+'\n'+up8f10+' \
         \n\n7) '+bbb+'\n'+up8f10+' \n\n8) '+ccc+'\n'+up8f10+' \n\n9) '+c+'\n'+up8f10+' \n\n10) '+i+'\n'
         )
         bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
@@ -143,7 +144,7 @@ def final_training(message):
         \n\n---1-ый день--- \
         \n\n1) '+a+' \n\n2) '+b+'\n'+time20+' \n\n3) '+c+'\n'+up15f20+' \
         \n\n4) '+eee+'\n'+up15f20+' \n\n5) '+ggg+'\n'+up15f20+' \n\n6) '+hhh+'\n'+up15f20+' \
-        \n\n7) '+iii+'\n'+up15f20+' \n\n8) '+ii+'\n'+up15f20+' \n\n9) '+jjj+'\n'+up15f20+' \n\n10) '+i+'\
+        \n\n7) '+iii+'\n'+up15f20+' \n\n8) '+h+'\n'+up15f20+' \n\n9) '+jjj+'\n'+up15f20+' \n\n10) '+i+'\
         \n\n---2-ой день--- \
         \n\n1) '+a+' \n\n2) '+kkk+'\n'+time20+' \n\n3) '+c+'\n'+up15f20+' \
         \n\n4) '+f+'\n'+up15f20+' \n\n5) '+lll+'\n'+up15f20+' \n\n6) '+mmm+'\n'+up15f20+' \
@@ -156,7 +157,7 @@ def final_training(message):
         \n\n---1-ый день--- \
         \n\n1) '+a+' \n\n2) '+b+'\n'+time10+' \n\n3) '+c+'\n'+up10f12+' \
         \n\n4) '+eee+'\n'+up10f12+' \n\n5) '+ggg+'\n'+up10f12+' \n\n6) '+hhh+'\n'+up10f12+' \
-        \n\n7) '+iii+'\n'+up10f12+' \n\n8) '+ii+'\n'+up10f12+' \n\n9) '+jjj+'\n'+up10f12+' \n\n10) '+i+'\
+        \n\n7) '+iii+'\n'+up10f12+' \n\n8) '+h+'\n'+up10f12+' \n\n9) '+jjj+'\n'+up10f12+' \n\n10) '+i+'\
         \n\n---2-ой день--- \
         \n\n1) '+a+' \n\n2) '+kkk+'\n'+time10+' \n\n3) '+c+'\n'+up10f12+' \
         \n\n4) '+f+'\n'+up10f12+' \n\n5) '+lll+'\n'+up10f12+' \n\n6) '+mmm+'\n'+up10f12+' \
@@ -169,7 +170,7 @@ def final_training(message):
         \n\n---1-ый день--- \
         \n\n1) '+a+' \n\n2) '+b+'\n'+time5+' \n\n3) '+c+'\n'+up8f10+' \
         \n\n4) '+eee+'\n'+up8f10+' \n\n5) '+ggg+'\n'+up8f10+' \n\n6) '+hhh+'\n'+up8f10+' \
-        \n\n7) '+iii+'\n'+up8f10+' \n\n8) '+ii+'\n'+up8f10+' \n\n9) '+jjj+'\n'+up8f10+' \n\n10) '+i+'\
+        \n\n7) '+iii+'\n'+up8f10+' \n\n8) '+h+'\n'+up8f10+' \n\n9) '+jjj+'\n'+up8f10+' \n\n10) '+i+'\
         \n\n---2-ой день--- \
         \n\n1) '+a+' \n\n2) '+kkk+'\n'+time5+' \n\n3) '+c+'\n'+up8f10+' \
         \n\n4) '+f+'\n'+up8f10+' \n\n5) '+lll+'\n'+up8f10+' \n\n6) '+mmm+'\n'+up8f10+' \
@@ -189,7 +190,7 @@ def final_training(message):
         \n\n---2-ой день--- \
         \n\n1) '+a+' \n\n2) '+aa+'\n'+time20+' \n\n3) '+sss+'\n'+up15f20+' \
         \n\n4) '+dd+'\n'+up15f20+' \n\n5) '+aab+'\n'+up15f20+' \n\n6) '+ff+'\n'+up15f20+' \
-        \n\n7) '+aac+'\n'+up15f20+' \n\n8) '+aad+'\n'+up15f20+' \n\n9) '+i+'\n'
+        \n\n7) '+aaa+'\n'+up15f20+' \n\n8) '+aad+'\n'+up15f20+' \n\n9) '+i+'\n'
         )
         bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
     elif sex == 'парень' and aim == 'держать форму' and placing == 'дома' and time == '2 раза': #5.2 ДВА ДНЯ
@@ -202,7 +203,7 @@ def final_training(message):
         \n\n---2-ой день--- \
         \n\n1) '+a+' \n\n2) '+aa+'\n'+time10+' \n\n3) '+sss+'\n'+up10f12+' \
         \n\n4) '+dd+'\n'+up10f12+' \n\n5) '+aab+'\n'+up10f12+' \n\n6) '+ff+'\n'+up10f12+' \
-        \n\n7) '+aac+'\n'+up10f12+' \n\n8) '+aad+'\n'+up10f12+' \n\n9) '+i+'\n'
+        \n\n7) '+aaa+'\n'+up10f12+' \n\n8) '+aad+'\n'+up10f12+' \n\n9) '+i+'\n'
         )
         bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
     elif sex == 'парень' and aim == 'подкачаться' and placing == 'дома' and time == '2 раза': #5.3 ДВА ДНЯ
@@ -215,7 +216,7 @@ def final_training(message):
         \n\n---2-ой день--- \
         \n\n1) '+a+' \n\n2) '+aa+'\n'+time5+' \n\n3) '+sss+'\n'+up8f10+' \
         \n\n4) '+dd+'\n'+up8f10+' \n\n5) '+aab+'\n'+up8f10+' \n\n6) '+ff+'\n'+up8f10+' \
-        \n\n7) '+aac+'\n'+up8f10+' \n\n8) '+aad+'\n'+up8f10+' \n\n9) '+i+'\n'
+        \n\n7) '+aaa+'\n'+up8f10+' \n\n8) '+aad+'\n'+up8f10+' \n\n9) '+i+'\n'
         )
         bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
 
@@ -230,8 +231,8 @@ def final_training(message):
         \n\n7) '+rrr+'\n'+up15f20+' \n\n8) '+ppp+'\n'+up15f20+' \n\n9) '+i+'\
         \n\n---2-ой день--- \
         \n\n1) '+a+' \n\n2) '+fff+'\n'+time20+' \n\n3) '+bb+'\n'+up15f20+' \
-        \n\n4) '+sss+'\n'+up15f20+' \n\n5) '+aaa+'\n'+up15f20+' \n\n6) '+bbb+'\n'+up15f20+' \
-        \n\n7) '+aab+'\n'+up15f20+' \n\n8) '+aac+'\n'+up15f20+' \n\n9) '+i+'\n'
+        \n\n4) '+sss+'\n'+up15f20+' \n\n5) '+dd+'\n'+up15f20+' \n\n6) '+bbb+'\n'+up15f20+' \
+        \n\n7) '+aab+'\n'+up15f20+' \n\n8) '+aaa+'\n'+up15f20+' \n\n9) '+i+'\n'
         )
         bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
     elif sex == 'парень' and aim == 'держать форму' and placing == 'в воркаут зоне' and time == '2 раза': #6.2 ДВА ДНЯ#
@@ -239,12 +240,12 @@ def final_training(message):
         message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
         \n\n---1-ый день--- \
         \n\n1) '+a+' \n\n2) '+fff+'\n'+time10+' \n\n3) '+hh+'\n'+up10f12+' \
-        \n\n4) '+ii+'\n'+up10f12+' \n\n5) '+aae+'\n'+up10f12+' \n\n6) '+qqq+'\n'+up10f12+' \
+        \n\n4) '+h+'\n'+up10f12+' \n\n5) '+aae+'\n'+up10f12+' \n\n6) '+qqq+'\n'+up10f12+' \
         \n\n7) '+rrr+'\n'+up10f12+' \n\n8) '+ppp+'\n'+up10f12+' \n\n9) '+i+'\
         \n\n---2-ой день--- \
         \n\n1) '+a+' \n\n2) '+fff+'\n'+time20+' \n\n3) '+bb+'\n'+up10f12+' \
-        \n\n4) '+sss+'\n'+up10f12+' \n\n5) '+aaa+'\n'+up10f12+' \n\n6) '+bbb+'\n'+up10f12+' \
-        \n\n7) '+aab+'\n'+up10f12+' \n\n8) '+aac+'\n'+up10f12+' \n\n9) '+i+'\n'
+        \n\n4) '+sss+'\n'+up10f12+' \n\n5) '+dd+'\n'+up10f12+' \n\n6) '+bbb+'\n'+up10f12+' \
+        \n\n7) '+aab+'\n'+up10f12+' \n\n8) '+aaa+'\n'+up10f12+' \n\n9) '+i+'\n'
         )
         bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
     elif sex == 'парень' and aim == 'подкачаться' and placing == 'в воркаут зоне' and time == '2 раза': #6.3 ДВА ДНЯ#
@@ -252,12 +253,12 @@ def final_training(message):
         message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
         \n\n---1-ый день--- \
         \n\n1) '+a+' \n\n2) '+fff+'\n'+time5+' \n\n3) '+hh+'\n'+up8f10+' \
-        \n\n4) '+ii+'\n'+up8f10+' \n\n5) '+aae+'\n'+up8f10+' \n\n6) '+qqq+'\n'+up8f10+' \
+        \n\n4) '+h+'\n'+up8f10+' \n\n5) '+aae+'\n'+up8f10+' \n\n6) '+qqq+'\n'+up8f10+' \
         \n\n7) '+rrr+'\n'+up8f10+' \n\n8) '+ppp+'\n'+up8f10+' \n\n9) '+i+'\
         \n\n---2-ой день--- \
         \n\n1) '+a+' \n\n2) '+fff+'\n'+time5+' \n\n3) '+bb+'\n'+up8f10+' \
-        \n\n4) '+sss+'\n'+up8f10+' \n\n5) '+aaa+'\n'+up8f10+' \n\n6) '+bbb+'\n'+up8f10+' \
-        \n\n7) '+aab+'\n'+up8f10+' \n\n8) '+aac+'\n'+up8f10+' \n\n9) '+i+'\n'
+        \n\n4) '+sss+'\n'+up8f10+' \n\n5) '+dd+'\n'+up8f10+' \n\n6) '+bbb+'\n'+up8f10+' \
+        \n\n7) '+aab+'\n'+up8f10+' \n\n8) '+aaa+'\n'+up8f10+' \n\n9) '+i+'\n'
         )
         bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
 
@@ -322,7 +323,7 @@ def final_training(message):
         message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
         \n\n---1-ый день--- \
         \n\n1) '+a+' \n\n2) '+aa+'\n'+time20+' \n\n3) '+dd+'\n'+up15f20+' \
-        \n\n4) '+aab+'\n'+up15f20+' \n\n5) '+ff+'\n'+up15f20+' \n\n6) '+aac+'\n'+up15f20+' \
+        \n\n4) '+aab+'\n'+up15f20+' \n\n5) '+ff+'\n'+up15f20+' \n\n6) '+aaa+'\n'+up15f20+' \
         \n\n7) '+i+'\
         \n\n---2-ой день--- \
         \n\n1) '+a+' \n\n2) '+aa+'\n'+time20+' \n\n3) '+bb+'\n'+up15f20+' \
@@ -339,7 +340,7 @@ def final_training(message):
         message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
         \n\n---1-ый день--- \
         \n\n1) '+a+' \n\n2) '+aa+'\n'+time10+' \n\n3) '+dd+'\n'+up10f12+' \
-        \n\n4) '+aab+'\n'+up10f12+' \n\n5) '+ff+'\n'+up10f12+' \n\n6) '+aac+'\n'+up10f12+' \
+        \n\n4) '+aab+'\n'+up10f12+' \n\n5) '+ff+'\n'+up10f12+' \n\n6) '+aaa+'\n'+up10f12+' \
         \n\n7) '+i+'\
         \n\n---2-ой день--- \
         \n\n1) '+a+' \n\n2) '+aa+'\n'+time10+' \n\n3) '+bb+'\n'+up10f12+' \
@@ -356,7 +357,7 @@ def final_training(message):
         message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
         \n\n---1-ый день--- \
         \n\n1) '+a+' \n\n2) '+aa+'\n'+time5+' \n\n3) '+dd+'\n'+up8f10+' \
-        \n\n4) '+aab+'\n'+up8f10+' \n\n5) '+ff+'\n'+up8f10+' \n\n6) '+aac+'\n'+up8f10+' \
+        \n\n4) '+aab+'\n'+up8f10+' \n\n5) '+ff+'\n'+up8f10+' \n\n6) '+aaa+'\n'+up8f10+' \
         \n\n7) '+i+'\
         \n\n---2-ой день--- \
         \n\n1) '+a+' \n\n2) '+aa+'\n'+time5+' \n\n3) '+bb+'\n'+up8f10+' \
@@ -375,12 +376,12 @@ def final_training(message):
         bot.send_message(
         message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
         \n\n---1-ый день--- \
-        \n\n1) '+a+' \n\n2) '+fff+'\n'+time20+' \n\n3) '+aaa+'\n'+up15f20+' \
-        \n\n4) '+aab+'\n'+up15f20+' \n\n5) '+bbb+'\n'+up15f20+' \n\n6) '+aac+'\n'+up15f20+' \
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time20+' \n\n3) '+dd+'\n'+up15f20+' \
+        \n\n4) '+aab+'\n'+up15f20+' \n\n5) '+bbb+'\n'+up15f20+' \n\n6) '+aaa+'\n'+up15f20+' \
         \n\n7) '+i+'\
         \n\n---2-ой день--- \
         \n\n1) '+a+' \n\n2) '+fff+'\n'+time20+' \n\n3) '+hh+'\n'+up15f20+' \
-        \n\n4) '+ii+'\n'+up15f20+' \n\n5) '+aae+'\n'+up15f20+' \n\n6) '+aak+'\n'+up15f20+' \
+        \n\n4) '+h+'\n'+up15f20+' \n\n5) '+aae+'\n'+up15f20+' \n\n6) '+aak+'\n'+up15f20+' \
         \n\n7) '+aam+'\n'+up15f20+' \n\n8) '+i+'\
         \n\n---3-ий день--- \
         \n\n1) '+a+' \n\n2) '+fff+'\n'+time20+' \n\n3) '+cc+'\n'+up15f20+' \
@@ -392,12 +393,12 @@ def final_training(message):
         bot.send_message(
         message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
         \n\n---1-ый день--- \
-        \n\n1) '+a+' \n\n2) '+fff+'\n'+time10+' \n\n3) '+aaa+'\n'+up10f12+' \
-        \n\n4) '+aab+'\n'+up10f12+' \n\n5) '+bbb+'\n'+up10f12+' \n\n6) '+aac+'\n'+up10f12+' \
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time10+' \n\n3) '+dd+'\n'+up10f12+' \
+        \n\n4) '+aab+'\n'+up10f12+' \n\n5) '+bbb+'\n'+up10f12+' \n\n6) '+aaa+'\n'+up10f12+' \
         \n\n7) '+i+'\
         \n\n---2-ой день--- \
         \n\n1) '+a+' \n\n2) '+fff+'\n'+time10+' \n\n3) '+hh+'\n'+up10f12+' \
-        \n\n4) '+ii+'\n'+up10f12+' \n\n5) '+aae+'\n'+up10f12+' \n\n6) '+aak+'\n'+up10f12+' \
+        \n\n4) '+h+'\n'+up10f12+' \n\n5) '+aae+'\n'+up10f12+' \n\n6) '+aak+'\n'+up10f12+' \
         \n\n7) '+ee+'\n'+up10f12+' \n\n8) '+i+'\
         \n\n---3-ий день--- \
         \n\n1) '+a+' \n\n2) '+fff+'\n'+time10+' \n\n3) '+cc+'\n'+up10f12+' \
@@ -409,19 +410,398 @@ def final_training(message):
         bot.send_message(
         message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
         \n\n---1-ый день--- \
-        \n\n1) '+a+' \n\n2) '+fff+'\n'+time20+' \n\n3) '+aaa+'\n'+up8f10+' \
-        \n\n4) '+aab+'\n'+up8f10+' \n\n5) '+bbb+'\n'+up8f10+' \n\n6) '+aac+'\n'+up8f10+' \
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time5+' \n\n3) '+dd+'\n'+up8f10+' \
+        \n\n4) '+aab+'\n'+up8f10+' \n\n5) '+bbb+'\n'+up8f10+' \n\n6) '+aaa+'\n'+up8f10+' \
         \n\n7) '+i+'\
         \n\n---2-ой день--- \
-        \n\n1) '+a+' \n\n2) '+fff+'\n'+time20+' \n\n3) '+hh+'\n'+up8f10+' \
-        \n\n4) '+ii+'\n'+up8f10+' \n\n5) '+aae+'\n'+up8f10+' \n\n6) '+aak+'\n'+up8f10+' \
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time5+' \n\n3) '+hh+'\n'+up8f10+' \
+        \n\n4) '+h+'\n'+up8f10+' \n\n5) '+aae+'\n'+up8f10+' \n\n6) '+aak+'\n'+up8f10+' \
         \n\n7) '+ee+'\n'+up8f10+' \n\n8) '+i+'\
         \n\n---3-ий день--- \
-        \n\n1) '+a+' \n\n2) '+fff+'\n'+time20+' \n\n3) '+cc+'\n'+up8f10+' \
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time5+' \n\n3) '+cc+'\n'+up8f10+' \
         \n\n4) '+ccc+'\n'+up8f10+' \n\n5) '+rrr+'\n'+up8f10+' \n\n6) '+qqq+'\n'+up8f10+' \
         \n\n7) '+aam+'\n'+up8f10+' \n\n8) '+i+'\n'
         )
         bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+
+#__________________ВЫВОД ТРЕНИРОВКИ__________________#ДЕВУШКИ
+
+    elif sex == 'девушка' and aim == 'подсушиться' and placing == 'в зале' and time == '1 раз': #10.1#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n1) '+a+' \n\n2) '+b+'\n'+time20+' \n\n3) '+d+'\n'+up15f20+' \
+        \n\n4) '+aan+'\n'+up15f20+' \n\n5) '+aao+'\n'+up15f20+' \n\n6) '+aap+'\n'+up15f20+' \
+        \n\n7) '+iii+'\n'+up15f20+' \n\n8) '+ff+'\n'+up15f20+' \n\n9) '+gg+'\n'+up15f20+' \n\n10) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+    elif sex == 'девушка' and aim == 'держать форму' and placing == 'в зале' and time == '1 раз': #10.2#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n1) '+a+' \n\n2) '+b+'\n'+time10+' \n\n3) '+d+'\n'+up10f12+' \
+        \n\n4) '+aan+'\n'+up10f12+' \n\n5) '+aao+'\n'+up10f12+' \n\n6) '+aap+'\n'+up10f12+' \
+        \n\n7) '+iii+'\n'+up10f12+' \n\n8) '+ff+'\n'+up10f12+' \n\n9) '+gg+'\n'+up10f12+' \n\n10) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+    elif sex == 'девушка' and aim == 'подкачаться' and placing == 'в зале' and time == '1 раз': #10.3#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n1) '+a+' \n\n2) '+b+'\n'+time5+' \n\n3) '+d+'\n'+up8f10+' \
+        \n\n4) '+aan+'\n'+up8f10+' \n\n5) '+aao+'\n'+up8f10+' \n\n6) '+aap+'\n'+up8f10+' \
+        \n\n7) '+iii+'\n'+up8f10+' \n\n8) '+ff+'\n'+up8f10+' \n\n9) '+gg+'\n'+up8f10+' \n\n10) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+
+#########################################################################################################################
+
+    elif sex == 'девушка' and aim == 'подсушиться' and placing == 'дома' and time == '1 раз': #11.1#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n1) '+a+' \n\n2) '+aa+'\n'+time20+' \n\n3) '+bb+'\n'+up15f20+' \
+        \n\n4) '+cc+'\n'+up15f20+' \n\n5) '+qqq+'\n'+up15f20+' \n\n6) '+aao+'\n'+up15f20+' \
+        \n\n7) '+gg+'\n'+up15f20+' \n\n8) '+ee+'\n'+up15f20+' \n\n9) '+ff+'\n'+up15f20+' \n\n10) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+    elif sex == 'девушка' and aim == 'держать форму' and placing == 'дома' and time == '1 раз': #11.2#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n1) '+a+' \n\n2) '+aa+'\n'+time10+' \n\n3) '+bb+'\n'+up10f12+' \
+        \n\n4) '+cc+'\n'+up10f12+' \n\n5) '+qqq+'\n'+up10f12+' \n\n6) '+aao+'\n'+up10f12+' \
+        \n\n7) '+gg+'\n'+up10f12+' \n\n8) '+ee+'\n'+up10f12+' \n\n9) '+ff+'\n'+up10f12+' \n\n10) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+    elif sex == 'девушка' and aim == 'подкачаться' and placing == 'дома' and time == '1 раз': #11.3#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n1) '+a+' \n\n2) '+aa+'\n'+time5+' \n\n3) '+bb+'\n'+up8f10+' \
+        \n\n4) '+cc+'\n'+up8f10+' \n\n5) '+qqq+'\n'+up8f10+' \n\n6) '+aao+'\n'+up8f10+' \
+        \n\n7) '+gg+'\n'+up8f10+' \n\n8) '+ee+'\n'+up8f10+' \n\n9) '+ff+'\n'+up8f10+' \n\n10) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+
+#########################################################################################################################
+
+    elif sex == 'девушка' and aim == 'подсушиться' and placing == 'в воркаут зоне' and time == '1 раз': #12.1#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time20+' \n\n3) '+bb+'\n'+up15f20+' \
+        \n\n4) '+cc+'\n'+up15f20+' \n\n5) '+aan+'\n'+up15f20+' \n\n6) '+aak+'\n'+up15f20+' \
+        \n\n7) '+aam+'\n'+up15f20+' \n\n8) '+ff+'\n'+up15f20+' \n\n9) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+    elif sex == 'девушка' and aim == 'держать форму' and placing == 'в воркаут зоне' and time == '1 раз': #12.2#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time10+' \n\n3) '+bb+'\n'+up10f12+' \
+        \n\n4) '+cc+'\n'+up10f12+' \n\n5) '+aan+'\n'+up10f12+' \n\n6) '+aak+'\n'+up10f12+' \
+        \n\n7) '+aam+'\n'+up10f12+' \n\n8) '+ff+'\n'+up10f12+' \n\n9) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+    elif sex == 'девушка' and aim == 'подкачаться' and placing == 'в воркаут зоне' and time == '1 раз': #12.3#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time5+' \n\n3) '+bb+'\n'+up8f10+' \
+        \n\n4) '+cc+'\n'+up8f10+' \n\n5) '+aan+'\n'+up8f10+' \n\n6) '+aak+'\n'+up8f10+' \
+        \n\n7) '+aam+'\n'+up8f10+' \n\n8) '+ff+'\n'+up8f10+' \n\n9) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+
+#########################################################################################################################
+
+    elif sex == 'девушка' and aim == 'подсушиться' and placing == 'в зале' and time == '2 раза': #13.1#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n---1-ый день--- \
+        \n\n1) '+a+' \n\n2) '+b+'\n'+time20+' \n\n3) '+d+'\n'+up15f20+' \
+        \n\n4) '+aap+'\n'+up15f20+' \n\n5) '+iii+'\n'+up15f20+' \n\n6) '+aaq+'\n'+up15f20+' \
+        \n\n7) '+ff+'\n'+up15f20+' \n\n8) '+i+'\
+        \n\n---2-ой день--- \
+        \n\n1) '+a+' \n\n2) '+kkk+'\n'+time20+' \n\n3) '+aan+'\n'+up15f20+' \
+        \n\n4) '+aao+'\n'+up15f20+' \n\n5) '+hhh+'\n'+up15f20+' \n\n6) '+aar+'\n'+up15f20+' \
+        \n\n7) '+c+'\n'+up15f20+' \n\n8) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+    elif sex == 'девушка' and aim == 'держать форму' and placing == 'в зале' and time == '2 раза': #13.2#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n---1-ый день--- \
+        \n\n1) '+a+' \n\n2) '+b+'\n'+time10+' \n\n3) '+d+'\n'+up10f12+' \
+        \n\n4) '+aap+'\n'+up10f12+' \n\n5) '+iii+'\n'+up10f12+' \n\n6) '+aaq+'\n'+up10f12+' \
+        \n\n7) '+ff+'\n'+up10f12+' \n\n8) '+i+'\
+        \n\n---2-ой день--- \
+        \n\n1) '+a+' \n\n2) '+kkk+'\n'+time10+' \n\n3) '+aan+'\n'+up10f12+' \
+        \n\n4) '+aao+'\n'+up10f12+' \n\n5) '+hhh+'\n'+up10f12+' \n\n6) '+aar+'\n'+up10f12+' \
+        \n\n7) '+c+'\n'+up10f12+' \n\n8) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+    elif sex == 'девушка' and aim == 'подкачаться' and placing == 'в зале' and time == '2 раза': #13.3#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n---1-ый день--- \
+        \n\n1) '+a+' \n\n2) '+b+'\n'+time5+' \n\n3) '+d+'\n'+up8f10+' \
+        \n\n4) '+aap+'\n'+up8f10+' \n\n5) '+iii+'\n'+up8f10+' \n\n6) '+aaq+'\n'+up8f10+' \
+        \n\n7) '+ff+'\n'+up8f10+' \n\n8) '+i+'\
+        \n\n---2-ой день--- \
+        \n\n1) '+a+' \n\n2) '+kkk+'\n'+time5+' \n\n3) '+aan+'\n'+up8f10+' \
+        \n\n4) '+aao+'\n'+up8f10+' \n\n5) '+hhh+'\n'+up8f10+' \n\n6) '+aar+'\n'+up8f10+' \
+        \n\n7) '+c+'\n'+up8f10+' \n\n8) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+
+############################################################################################################################
+
+    elif sex == 'девушка' and aim == 'подсушиться' and placing == 'дома' and time == '2 раза': #14.1#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n---1-ый день--- \
+        \n\n1) '+a+' \n\n2) '+aa+'\n'+time20+' \n\n3) '+bb+'\n'+up15f20+' \
+        \n\n4) '+ee+'\n'+up15f20+' \n\n5) '+dd+'\n'+up15f20+' \n\n6) '+ff+'\n'+up15f20+' \
+        \n\n7) '+aas+'\n'+up15f20+' \n\n8) '+i+'\
+        \n\n---2-ой день--- \
+        \n\n1) '+a+' \n\n2) '+aa+'\n'+time20+' \n\n3) '+cc+'\n'+up15f20+' \
+        \n\n4) '+qqq+'\n'+up15f20+' \n\n5) '+aao+'\n'+up15f20+' \n\n6) '+gg+'\n'+up15f20+' \
+        \n\n7) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+    elif sex == 'девушка' and aim == 'держать форму' and placing == 'дома' and time == '2 раза': #14.2#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n---1-ый день--- \
+        \n\n1) '+a+' \n\n2) '+aa+'\n'+time10+' \n\n3) '+bb+'\n'+up10f12+' \
+        \n\n4) '+ee+'\n'+up10f12+' \n\n5) '+dd+'\n'+up10f12+' \n\n6) '+ff+'\n'+up10f12+' \
+        \n\n7) '+aas+'\n'+up10f12+' \n\n8) '+i+'\
+        \n\n---2-ой день--- \
+        \n\n1) '+a+' \n\n2) '+aa+'\n'+time10+' \n\n3) '+cc+'\n'+up10f12+' \
+        \n\n4) '+qqq+'\n'+up10f12+' \n\n5) '+aao+'\n'+up10f12+' \n\n6) '+gg+'\n'+up10f12+' \
+        \n\n7) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+    elif sex == 'девушка' and aim == 'подкачаться' and placing == 'дома' and time == '2 раза': #14.3#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n---1-ый день--- \
+        \n\n1) '+a+' \n\n2) '+aa+'\n'+time5+' \n\n3) '+bb+'\n'+up8f10+' \
+        \n\n4) '+ee+'\n'+up8f10+' \n\n5) '+dd+'\n'+up8f10+' \n\n6) '+ff+'\n'+up8f10+' \
+        \n\n7) '+aas+'\n'+up8f10+' \n\n8) '+i+'\
+        \n\n---2-ой день--- \
+        \n\n1) '+a+' \n\n2) '+aa+'\n'+time5+' \n\n3) '+cc+'\n'+up8f10+' \
+        \n\n4) '+qqq+'\n'+up8f10+' \n\n5) '+aao+'\n'+up8f10+' \n\n6) '+gg+'\n'+up8f10+' \
+        \n\n7) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+
+#########################################################################################################################
+
+    elif sex == 'девушка' and aim == 'подсушиться' and placing == 'в воркаут зоне' and time == '2 раза': #15.1#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n---1-ый день--- \
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time20+' \n\n3) '+hh+'\n'+up15f20+' \
+        \n\n4) '+dd+'\n'+up15f20+' \n\n5) '+ff+'\n'+up15f20+' \n\n6) '+aam+'\n'+up15f20+' \
+        \n\n7) '+aas+'\n'+up15f20+' \n\n8) '+i+'\
+        \n\n---2-ой день--- \
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time20+' \n\n3) '+hh+'\n'+up15f20+' \
+        \n\n4) '+cc+'\n'+up15f20+' \n\n5) '+qqq+'\n'+up15f20+' \n\n6) '+c+'\n'+up15f20+' \
+        \n\n7) '+gg+'\n'+up15f20+' \n\n8) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+    elif sex == 'девушка' and aim == 'держать форму' and placing == 'в воркаут зоне' and time == '2 раза': #15.2#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n---1-ый день--- \
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time10+' \n\n3) '+hh+'\n'+up10f12+' \
+        \n\n4) '+dd+'\n'+up10f12+' \n\n5) '+ff+'\n'+up10f12+' \n\n6) '+aam+'\n'+up10f12+' \
+        \n\n7) '+aas+'\n'+up10f12+' \n\n8) '+i+'\
+        \n\n---2-ой день--- \
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time20+' \n\n3) '+hh+'\n'+up10f12+' \
+        \n\n4) '+cc+'\n'+up10f12+' \n\n5) '+qqq+'\n'+up10f12+' \n\n6) '+c+'\n'+up10f12+' \
+        \n\n7) '+gg+'\n'+up10f12+' \n\n8) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+    elif sex == 'девушка' and aim == 'подкачаться' and placing == 'в воркаут зоне' and time == '2 раза': #15.3#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n---1-ый день--- \
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time5+' \n\n3) '+hh+'\n'+up8f10+' \
+        \n\n4) '+dd+'\n'+up8f10+' \n\n5) '+ff+'\n'+up8f10+' \n\n6) '+aam+'\n'+up8f10+' \
+        \n\n7) '+aas+'\n'+up8f10+' \n\n8) '+i+'\
+        \n\n---2-ой день--- \
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time5+' \n\n3) '+hh+'\n'+up8f10+' \
+        \n\n4) '+cc+'\n'+up8f10+' \n\n5) '+qqq+'\n'+up8f10+' \n\n6) '+c+'\n'+up8f10+' \
+        \n\n7) '+gg+'\n'+up8f10+' \n\n8) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+
+#########################################################################################################################
+
+    elif sex == 'девушка' and aim == 'подсушиться' and placing == 'в зале' and time == '3 раза': #16.1#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n---1-ый день--- \
+        \n\n1) '+a+' \n\n2) '+b+'\n'+time20+' \n\n3) '+aat+'\n'+up15f20+' \
+        \n\n4) '+aau+'\n'+up15f20+' \n\n5) '+nnn+'\n'+up15f20+' \n\n6) '+mmm+'\n'+up15f20+' \
+        \n\n7) '+aaq+'\n'+up15f20+' \n\n8) '+i+'\
+        \n\n---2-ой день--- \
+        \n\n1) '+a+' \n\n2) '+gg+'\n'+time20+' \n\n3) '+d+'\n'+up15f20+' \
+        \n\n4) '+iii+'\n'+up15f20+' \n\n5) '+jjj+'\n'+up15f20+' \n\n6) '+aap+'\n'+up15f20+' \
+        \n\n7) '+aam+'\n'+up15f20+' \n\n8) '+i+'\
+        \n\n---3-ий день--- \
+        \n\n1) '+a+' \n\n2) '+gg+'\n'+time20+' \n\n3) '+hhh+'\n'+up15f20+' \
+        \n\n4) '+ddd+'\n'+up15f20+' \n\n5) '+aai+'\n'+up15f20+' \n\n6) '+aaj+'\n'+up15f20+' \
+        \n\n7) '+aak+'\n'+up15f20+' \n\n8) '+aao+'\n'+up15f20+' \n\n9) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+    elif sex == 'девушка' and aim == 'держать форму' and placing == 'в зале' and time == '3 раза': #16.2#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n---1-ый день--- \
+        \n\n1) '+a+' \n\n2) '+b+'\n'+time10+' \n\n3) '+aat+'\n'+up10f12+' \
+        \n\n4) '+aau+'\n'+up10f12+' \n\n5) '+nnn+'\n'+up10f12+' \n\n6) '+mmm+'\n'+up10f12+' \
+        \n\n7) '+aaq+'\n'+up10f12+' \n\n8) '+i+'\
+        \n\n---2-ой день--- \
+        \n\n1) '+a+' \n\n2) '+gg+'\n'+time10+' \n\n3) '+d+'\n'+up10f12+' \
+        \n\n4) '+iii+'\n'+up10f12+' \n\n5) '+jjj+'\n'+up10f12+' \n\n6) '+aap+'\n'+up10f12+' \
+        \n\n7) '+aam+'\n'+up10f12+' \n\n8) '+i+'\
+        \n\n---3-ий день--- \
+        \n\n1) '+a+' \n\n2) '+gg+'\n'+time10+' \n\n3) '+hhh+'\n'+up10f12+' \
+        \n\n4) '+ddd+'\n'+up10f12+' \n\n5) '+aai+'\n'+up10f12+' \n\n6) '+aaj+'\n'+up10f12+' \
+        \n\n7) '+aak+'\n'+up10f12+' \n\n8) '+aao+'\n'+up10f12+' \n\n9) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+    elif sex == 'девушка' and aim == 'подкачаться' and placing == 'в зале' and time == '3 раза': #16.3#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n---1-ый день--- \
+        \n\n1) '+a+' \n\n2) '+b+'\n'+time5+' \n\n3) '+aat+'\n'+up8f10+' \
+        \n\n4) '+aau+'\n'+up8f10+' \n\n5) '+nnn+'\n'+up8f10+' \n\n6) '+mmm+'\n'+up8f10+' \
+        \n\n7) '+aaq+'\n'+up8f10+' \n\n8) '+i+'\
+        \n\n---2-ой день--- \
+        \n\n1) '+a+' \n\n2) '+gg+'\n'+time5+' \n\n3) '+d+'\n'+up8f10+' \
+        \n\n4) '+iii+'\n'+up8f10+' \n\n5) '+jjj+'\n'+up8f10+' \n\n6) '+aap+'\n'+up8f10+' \
+        \n\n7) '+aam+'\n'+up8f10+' \n\n8) '+i+'\
+        \n\n---3-ий день--- \
+        \n\n1) '+a+' \n\n2) '+gg+'\n'+time5+' \n\n3) '+hhh+'\n'+up8f10+' \
+        \n\n4) '+ddd+'\n'+up8f10+' \n\n5) '+aai+'\n'+up8f10+' \n\n6) '+aaj+'\n'+up8f10+' \
+        \n\n7) '+aak+'\n'+up8f10+' \n\n8) '+aao+'\n'+up8f10+' \n\n9) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+
+#########################################################################################################################
+
+    elif sex == 'девушка' and aim == 'подсушиться' and placing == 'дома' and time == '3 раза': #17.1 ТРИ ДНЯ#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n---1-ый день--- \
+        \n\n1) '+a+' \n\n2) '+aa+'\n'+time20+' \n\n3) '+bb+'\n'+up15f20+' \
+        \n\n4) '+dd+'\n'+up15f20+' \n\n5) '+aaa+'\n'+up15f20+' \n\n6) '+ff+'\n'+up15f20+' \
+        \n\n7) '+aas+'\n'+up15f20+' \n\n8) '+i+'\
+        \n\n---2-ой день--- \
+        \n\n1) '+a+' \n\n2) '+aa+'\n'+time20+' \n\n3) '+bb+'\n'+up15f20+' \
+        \n\n4) '+c+'\n'+up15f20+' \n\n5) '+gg+'\n'+up15f20+' \n\n6) '+eee+'\n'+up15f20+' \
+        \n\n7) '+ee+'\n'+up15f20+' \n\n8) '+i+'\
+        \n\n---3-ий день--- \
+        \n\n1) '+a+' \n\n2) '+aa+'\n'+time20+' \n\n3) '+cc+'\n'+up15f20+' \
+        \n\n4) '+ccc+'\n'+up15f20+' \n\n5) '+rrr+'\n'+up15f20+' \n\n6) '+qqq+'\n'+up15f20+' \
+        \n\n7) '+ddd+'\n'+up15f20+' \n\n8) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+    elif sex == 'девушка' and aim == 'держать форму' and placing == 'дома' and time == '3 раза': #17.2 ТРИ ДНЯ#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n---1-ый день--- \
+        \n\n1) '+a+' \n\n2) '+aa+'\n'+time10+' \n\n3) '+bb+'\n'+up10f12+' \
+        \n\n4) '+dd+'\n'+up10f12+' \n\n5) '+aaa+'\n'+up10f12+' \n\n6) '+ff+'\n'+up10f12+' \
+        \n\n7) '+aas+'\n'+up10f12+' \n\n8) '+i+'\
+        \n\n---2-ой день--- \
+        \n\n1) '+a+' \n\n2) '+aa+'\n'+time10+' \n\n3) '+bb+'\n'+up10f12+' \
+        \n\n4) '+c+'\n'+up10f12+' \n\n5) '+gg+'\n'+up10f12+' \n\n6) '+eee+'\n'+up10f12+' \
+        \n\n7) '+ee+'\n'+up10f12+' \n\n8) '+i+'\
+        \n\n---3-ий день--- \
+        \n\n1) '+a+' \n\n2) '+aa+'\n'+time10+' \n\n3) '+cc+'\n'+up10f12+' \
+        \n\n4) '+ccc+'\n'+up10f12+' \n\n5) '+rrr+'\n'+up10f12+' \n\n6) '+qqq+'\n'+up10f12+' \
+        \n\n7) '+ddd+'\n'+up10f12+' \n\n8) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+    elif sex == 'девушка' and aim == 'подкачаться' and placing == 'дома' and time == '3 раза': #17.3 ТРИ ДНЯ#
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n---1-ый день--- \
+        \n\n1) '+a+' \n\n2) '+aa+'\n'+time5+' \n\n3) '+bb+'\n'+up8f10+' \
+        \n\n4) '+dd+'\n'+up8f10+' \n\n5) '+aaa+'\n'+up8f10+' \n\n6) '+ff+'\n'+up8f10+' \
+        \n\n7) '+aas+'\n'+up8f10+' \n\n8) '+i+'\
+        \n\n---2-ой день--- \
+        \n\n1) '+a+' \n\n2) '+aa+'\n'+time5+' \n\n3) '+bb+'\n'+up8f10+' \
+        \n\n4) '+c+'\n'+up8f10+' \n\n5) '+gg+'\n'+up8f10+' \n\n6) '+eee+'\n'+up8f10+' \
+        \n\n7) '+ee+'\n'+up8f10+' \n\n8) '+i+'\
+        \n\n---3-ий день--- \
+        \n\n1) '+a+' \n\n2) '+aa+'\n'+time5+' \n\n3) '+cc+'\n'+up8f10+' \
+        \n\n4) '+ccc+'\n'+up8f10+' \n\n5) '+rrr+'\n'+up8f10+' \n\n6) '+qqq+'\n'+up8f10+' \
+        \n\n7) '+ddd+'\n'+up8f10+' \n\n8) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+
+#########################################################################################################################
+
+    elif sex == 'девушка' and aim == 'подсушиться' and placing == 'в воркаут зоне' and time == '3 раза': #18.1 ТРИ ДНЯ
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n---1-ый день--- \
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time20+' \n\n3) '+bb+'\n'+up15f20+' \
+        \n\n4) '+dd+'\n'+up15f20+' \n\n5) '+aaa+'\n'+up15f20+' \n\n6) '+ff+'\n'+up15f20+' \
+        \n\n7) '+aaa+'\n'+up15f20+' \n\n8) '+i+'\
+        \n\n---2-ой день--- \
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time20+' \n\n3) '+hh+'\n'+up15f20+' \
+        \n\n4) '+d+'\n'+up15f20+' \n\n5) '+ee+'\n'+up15f20+' \n\n6) '+c+'\n'+up15f20+' \
+        \n\n7) '+aam+'\n'+up15f20+' \n\n8) '+i+'\
+        \n\n---3-ий день--- \
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time20+' \n\n3) '+cc+'\n'+up15f20+' \
+        \n\n4) '+ccc+'\n'+up15f20+' \n\n5) '+rrr+'\n'+up15f20+' \n\n6) '+qqq+'\n'+up15f20+' \
+        \n\n7) '+ddd+'\n'+up15f20+' \n\n8) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+    elif sex == 'девушка' and aim == 'держать форму' and placing == 'в воркаут зоне' and time == '3 раза': #18.2 ТРИ ДНЯ
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n---1-ый день--- \
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time10+' \n\n3) '+bb+'\n'+up10f12+' \
+        \n\n4) '+dd+'\n'+up10f12+' \n\n5) '+aaa+'\n'+up10f12+' \n\n6) '+ff+'\n'+up10f12+' \
+        \n\n7) '+aaa+'\n'+up10f12+' \n\n8) '+i+'\
+        \n\n---2-ой день--- \
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time10+' \n\n3) '+hh+'\n'+up10f12+' \
+        \n\n4) '+d+'\n'+up10f12+' \n\n5) '+ee+'\n'+up10f12+' \n\n6) '+c+'\n'+up10f12+' \
+        \n\n7) '+ee+'\n'+up10f12+' \n\n8) '+i+'\
+        \n\n---3-ий день--- \
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time10+' \n\n3) '+cc+'\n'+up10f12+' \
+        \n\n4) '+ccc+'\n'+up10f12+' \n\n5) '+rrr+'\n'+up10f12+' \n\n6) '+qqq+'\n'+up10f12+' \
+        \n\n7) '+aam+'\n'+up10f12+' \n\n8) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+    elif sex == 'девушка' and aim == 'подкачаться' and placing == 'в воркаут зоне' and time == '3 раза': #18.3 ТРИ ДНЯ
+        bot.send_message(
+        message.from_user.id,'Ваша программа готова! Выполняйте '+time+' в неделю следующую тренировку:\
+        \n\n---1-ый день--- \
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time5+' \n\n3) '+bb+'\n'+up8f10+' \
+        \n\n4) '+dd+'\n'+up8f10+' \n\n5) '+aaa+'\n'+up8f10+' \n\n6) '+ff+'\n'+up8f10+' \
+        \n\n7) '+aaa+'\n'+up8f10+' \n\n8) '+i+'\
+        \n\n---2-ой день--- \
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time5+' \n\n3) '+hh+'\n'+up8f10+' \
+        \n\n4) '+d+'\n'+up8f10+' \n\n5) '+ee+'\n'+up8f10+' \n\n6) '+c+'\n'+up8f10+' \
+        \n\n7) '+ee+'\n'+up8f10+' \n\n8) '+i+'\
+        \n\n---3-ий день--- \
+        \n\n1) '+a+' \n\n2) '+fff+'\n'+time5+' \n\n3) '+cc+'\n'+up8f10+' \
+        \n\n4) '+ccc+'\n'+up8f10+' \n\n5) '+rrr+'\n'+up8f10+' \n\n6) '+qqq+'\n'+up8f10+' \
+        \n\n7) '+aam+'\n'+up8f10+' \n\n8) '+i+'\n'
+        )
+        bot.send_message(message.from_user.id,'Если хочешь получить программу питания, тыкни /eat')
+
+
+
+
+
+
+
+
+
+
 
 
 #_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_МУСОР_#
@@ -447,7 +827,7 @@ def get_activity(message):
     bot.register_next_step_handler(message, final_eat)
 
 def final_eat(message):
-    if 0<height<150 and 0<weight<40 and activity == 'активность 1': #1
+    if 0<height<150 and 0<weight<40 and activity == 'активность 1':
         bot.send_message(
         message.from_user.id,'Ваша программа питания готова! Вот Ваш рацион:\
         \n\n1) '+a+' \n\n2) '+b+'\n'+time20+' \n\n3) '+c+'\n'+up15f20+' \n\n4) '+d+'\n'+up15f20+' \
@@ -502,7 +882,7 @@ ee='Охотничья собака'
 ff='Обратные отжимания от стула'
 gg='Велосипед'
 hh='Подтягивание'
-aaa='Отжимания'
+aaa='Отжимания уголком'
 bbb='Отжимания на брусьях'
 ccc='Приседания с выпрыгиванием'
 ddd='Подъемы на носки с возвышением'
@@ -522,7 +902,7 @@ qqq='Выпады вперед'
 rrr='Стульчик'
 sss='Книжка'
 aab='Треугольные отжимания'
-aac='Отжимания уголком'
+aac=''
 aad='Поднятие тяжести перед собой'
 aae='Горизонтальные подтягивания'
 aaf='Сгибание рук со штангой'
@@ -533,9 +913,9 @@ aaj='Cгибание ног в тренажере'
 aak='Скручивание на скамье'
 aal='Уголок'
 aam='Подъем ног в висе'
-aan=''
-aao=''
-aap=''
+aan='Выпады с гантелями'
+aao='Ягодичный мост в Смите'
+aap='Подтягивания в гравитроне обратным хватом'
 aaq=''
 aar=''
 aas=''
